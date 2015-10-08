@@ -1,0 +1,25 @@
+{% extends "index.html" %}
+
+{% block body %}
+<div class="container">
+
+  <div class="row">
+    <div id="hashtag" class="col-md-4">
+      <div>
+        <h1>Realtime Cheese Grommit!</h1>
+    </div>
+    <div id="main" class="col-md-8">
+      {% for cheese in all_cheese %}
+            <div class="row">
+              {{ cheese }}
+           </div>
+
+      {% endfor %}
+    </div>
+  </div>
+  </div>
+  <div class="row"></div>
+
+</div>
+<!-- /.container -->
+{% endblock %}
