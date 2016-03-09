@@ -13,14 +13,12 @@
       {% for cheese in all_cheese %}
           {% if loop.first %} <div class="row">{% endif %}
             <div class="col-xs-4 col-sm-4 col-md-4 gram">
-                <a href="http://thepearts.com" target="_blank">
                   <div class="gram_inner">
                     <div class="gram_body">
                       <div class="caption">{{cheese.color}}</div>
                       <div class="user">{{cheese.status}}</div>
                     </div>
                   </div>
-                </a>
             </div>
             {% if loop.index is divisibleby(3) %}
             </div><div class="row">
